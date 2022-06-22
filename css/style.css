@@ -1,0 +1,686 @@
+@charset 'utf-8';
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Spoqa Han Sans, "Sans-serif";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.4px;
+  color: #333;
+}
+
+/* ========== 공통영역 ========== */
+.clearfix::after {
+  content: '';
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+.inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1184px;
+  margin: 0 auto;
+}
+
+/* ========== 팝업 영역 ========== */
+.pop {
+  position: relative;
+  display: block;
+}
+
+/* ========== 헤더 영역 ========== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: 9999;
+  background: #000;
+}
+
+.header .inner {
+  height: 96px;
+  overflow: hidden;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 129px;
+  height: 48px;
+  background: url('../images/logo.svg') no-repeat center;
+  background-size: contain;
+  font-size: 0;
+}
+
+/* gnb */
+.gnb {
+  position: absolute;
+  left: 170px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+.menu {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.menu li {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 20px;
+}
+
+.menu li a {
+  position: relative;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* nav-right */
+.nav-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  float: right;
+  overflow: hidden;
+}
+
+.submenu {
+  position: relative;
+  display: block;
+  float: left;
+  overflow: hidden;
+}
+
+.submenu-list {
+  position: relative;
+  display: block;
+  float: left;
+  overflow: hidden;
+}
+
+.submenu-list li {
+  position: relative;
+  display: block;
+  float: left;
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 48px;
+}
+
+.submenu-list li a {
+  position: relative;
+  display: block;
+  color: #fff;
+}
+
+.submenu-split {
+  position: relative;
+  display: block;
+  float: left;
+  width: 1px;
+  height: 12px;
+  background: #fff;
+  margin: 19px 0 0 15px;
+}
+
+.nav-right button {
+  position: relative;
+  display: block;
+  float: left;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px;
+  font-size: 0;
+  border: 0;
+}
+
+.cart {
+  background: url('../images/cart.svg') no-repeat center;
+  background-size: contain;
+  margin-left: 30px;
+}
+
+.showmenu {
+  background: url('../images/showmenu.svg') no-repeat center;
+  background-size: contain;
+}
+
+/* ========== 비쥬얼 영역 ========== */
+.visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 560px;
+}
+
+.visual a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/banner.png') no-repeat center top;
+  background-size: cover;
+}
+
+/* visual PC ver */
+/* visual Reposive ver */
+@media all and (max-width:1100px) {
+  .visual {
+    height: 50vw;
+  }
+}
+
+/* ========== 공지사항 영역 ========== */
+.notice {
+  position: relative;
+  display: block;
+  padding-top: 48px;
+  height: 181px;
+}
+
+/* 좌측 */
+.notice-swiper {
+  position: relative;
+  display: block;
+  width: 576px;
+  height: 176px;
+  float: left;
+}
+
+/* 슬라이드 내용 */
+.sw-notice {
+  width: 100%;
+  height: 100%;
+}
+
+.sw-notice a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sw-notice-1 {
+  background: url('../images/event_1.png') no-repeat center;
+  background-size: contain;
+}
+
+.sw-notice-2 {
+  background: url('../images/event_2.png') no-repeat center;
+  background-size: contain;
+}
+
+.sw-notice-3 {
+  background: url('../images/event_3.png') no-repeat center;
+  background-size: contain;
+}
+
+.sw-notice-4 {
+  background: url('../images/event_4.png') no-repeat center;
+  background-size: contain;
+}
+
+.sw-notice-5 {
+  background: url('../images/event_5.png') no-repeat center;
+  background-size: contain;
+}
+
+.sw-notice-6 {
+  background: url('../images/event_6.png') no-repeat center;
+  background-size: contain;
+}
+
+.sw-notice-7 {
+  background: url('../images/event_7.png') no-repeat center;
+  background-size: contain;
+}
+
+/* 슬라이드 제어 */
+.sw-control {
+  position: absolute;
+  left: 8px;
+  bottom: 8px;
+  display: block;
+  width: 103px;
+  height: 30px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  z-index: 999;
+}
+
+.sw-control button {
+  display: block;
+  width: 30px;
+  border: 0;
+  cursor: pointer;
+}
+
+.sw-control .material-icons {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.sw-notice-prev {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.swiper-pagination-fraction {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  display: block;
+  width: 41px;
+  height: 100%;
+  z-index: 9;
+  text-align: center;
+  line-height: 28px;
+  font-size: 13px;
+}
+
+.swiper-pagination-current {
+  font-weight: 700;
+}
+
+.sw-notice-next {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/* 우측 */
+.notice-free {
+  position: relative;
+  display: block;
+  width: 592px;
+  height: 176px;
+  float: right;
+}
+
+.notice-free a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/freshplan.png') no-repeat center;
+  background-size: contain;
+}
+
+/* ========== 베스트 아이템 영역 ========== */
+.bestitem {
+  position: relative;
+  display: block;
+}
+
+.bestitem .inner {
+  padding: 80px 0 35px;
+}
+
+.bestitem h2 {
+  position: relative;
+  display: block;
+  font-size: 32px;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+.best-list {
+  position: relative;
+  display: block;
+}
+
+.best-list li {
+  position: relative;
+  display: block;
+  width: 375px;
+  height: 480x;
+  float: left;
+  margin-right: 28px;
+  margin-bottom: 63px;
+}
+
+.best-list li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.best-img {
+  position: relative;
+  display: block;
+  height: 415px;
+  background: #f9f7f8;
+}
+
+.best-label {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  display: block;
+  width: 75px;
+  height: 30px;
+  background: url('../images/label.svg') no-repeat center;
+}
+
+
+.best-img a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 276px;
+  height: 276px;
+  font-size: 0;
+}
+
+.best-img-1 {
+  background: url('../images/porkbelly-fresh-list.png') no-repeat center;
+  background-size: 276px;
+}
+
+.best-img-2 {
+  background: url('../images/chickef-cut-list.png') no-repeat center;
+  background-size: 276px;
+}
+
+.best-img button {
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #eee;
+  border-radius: 50%;
+  box-shadow: 0 20px 10px -15px rgb(0 0 0 / 12%);
+  background: #fff url('../images/best-cart.svg') no-repeat center;
+  background-size: 70px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.best-img button:hover {
+  background: #212121 url('../images/best-cart-wh.svg') no-repeat center;
+  border: 2px solid #212121;
+}
+
+.best-info {
+  position: relative;
+  display: block;
+}
+
+.best-info h6 {
+  font-size: 18px;
+  margin: 16px 0 8px;
+  color: #000;
+}
+
+.best-info p {
+  font-size: 16px;
+  color: #9b9b9b;
+}
+
+/* ========== 배너 영역 ========== */
+.banner {
+  position: relative;
+  display: block;
+  padding-bottom: 150px;
+}
+
+.banner .inner {
+  height: 210px;
+}
+
+.banner a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url('../images/banner_shop.96086e0.png') no-repeat center;
+  background-size: contain;
+  font-size: 0;
+}
+
+/* ========== 푸터 영역 ========== */
+.footer {
+  position: relative;
+  display: block;
+  border-top: 1px solid black;
+}
+
+/* f-menu */
+.f-menu {
+  position: relative;
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+}
+
+.f-menu ul {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.f-menu ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin-right: 23px;
+}
+
+.f-menu ul li a {
+  font-size: 14px;
+  color: #000;
+  line-height: 66px;
+}
+
+.f-sns {
+  position: relative;
+  display: block;
+  float: right;
+}
+
+.f-sns button {
+  position: relative;
+  display: block;
+  width: 130px;
+  height: 40px;
+  float: left;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  margin: 10px 0;
+  background: #fafafa url('../images/app-icon.svg') no-repeat 9px 50%;
+}
+
+.f-sns button span {
+  font-size: 14px;
+  line-height: 40px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.f-sns a {
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  font-size: 0;
+  margin: 20px 0 20px 20px;
+}
+
+.kakao {
+  background: url('../images/kakao.svg') no-repeat center;
+  background-size: contain;
+}
+
+.insta {
+  background: url('../images/insta.svg') no-repeat center;
+  background-size: contain;
+}
+
+/* f-main */
+.f-main {
+  position: relative;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 19px;
+}
+
+/* right : f-main-info */
+.f-main-info {
+  position: relative;
+  display: block;
+  float: left;
+  padding-top: 16px;
+}
+
+.f-main-info img {
+  position: relative;
+  display: block;
+  width: 82px;
+  height: 32px;
+}
+
+.f-main-infomation {
+  position: relative;
+  display: block;
+  padding-top: 16px;
+  margin-bottom: 29px;
+}
+
+.f-main-infomation p {
+  font-size: 13px;
+  color: #212121;
+  line-height: 23px;
+}
+
+.f-main-infomation p span {
+  margin-right: 8px;
+}
+
+.f-main-infomation p a {
+  margin-right: 3px;
+  color: #4bb8ce;
+}
+
+.copy {
+  color: #212121;
+  font-size: 12px;
+}
+
+/* left : f-main-cs */
+.f-main-cs {
+  position: relative;
+  display: block;
+  float: right;
+  text-align: right;
+}
+
+.f-main-cs span {
+  position: relative;
+  display: block;
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+}
+
+.f-main-cs strong {
+  position: relative;
+  display: block;
+  font-size: 24px;
+  columns: #000;
+  font-weight: 800;
+}
+
+.f-main-cs em {
+  position: relative;
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  color: #757575;
+  line-height: 15px;
+  margin-bottom: 9px;
+}
+
+.f-main-sns {
+  position: relative;
+  display: block;
+  font-size: 13px;
+  line-height: 19px;
+  margin-bottom: 10px;
+}
+
+.f-main-sns p {
+  color: #000;
+}
+
+.f-main-sns p a {
+  color: #4bb8ce;
+}
+
+.f-main-ask {
+  position: relative;
+  display: block;
+}
+
+.f-main-ask button {
+  position: relative;
+  display: block;
+  float: left;
+  width: 88px;
+  height: 32px;
+  border: 1px solid #212121;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 32px;
+  cursor: pointer;
+  margin-left: 8px;
+}
