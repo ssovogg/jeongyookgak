@@ -1,13 +1,13 @@
 window.onload = function() {
   
   // 공지사항 슬라이드
-  new Swiper('.sw-notice', {
+  new Swiper('.sw-event', {
     navigation: {
-      prevEl: '.sw-notice-prev',
-      nextEl: '.sw-notice-next',
+      prevEl: '.sw-event-prev',
+      nextEl: '.sw-event-next',
     },
     pagination: {
-      el: ".sw-notice-number",
+      el: ".sw-event-number",
       type: "fraction",
     }
   });

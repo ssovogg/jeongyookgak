@@ -1,5 +1,6 @@
 @charset 'utf-8';
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+.spoka * { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif'; }
 
 * {
   margin: 0;
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-  font-family: Spoqa Han Sans, "Sans-serif";
+  font-family: 'Spoqa Han Sans', "Sans-serif";
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -36,7 +37,7 @@ body {
   color: #333;
 }
 
-/* ========== 공통영역 ========== */
+/* ========== 공통요소 ========== */
 .clearfix::after {
   content: '';
   position: relative;
@@ -53,8 +54,8 @@ body {
   margin: 0 auto;
 }
 
-/* ========== 팝업 영역 ========== */
-.pop {
+/* ========== 상단배너 영역 ========== */
+.popup {
   position: relative;
   display: block;
 }
@@ -176,6 +177,7 @@ body {
   margin-right: 8px;
   font-size: 0;
   border: 0;
+  cursor: pointer;
 }
 
 .cart {
@@ -195,6 +197,7 @@ body {
   display: block;
   width: 100%;
   height: 560px;
+  margin-top: 96px;
 }
 
 .visual a {
@@ -214,8 +217,8 @@ body {
   }
 }
 
-/* ========== 공지사항 영역 ========== */
-.notice {
+/* ========== 이벤트안내 영역 ========== */
+.event {
   position: relative;
   display: block;
   padding-top: 48px;
@@ -223,58 +226,58 @@ body {
 }
 
 /* 좌측 */
-.notice-swiper {
+.event-swiper {
   position: relative;
   display: block;
-  width: 576px;
+  width: 592px;
   height: 176px;
   float: left;
 }
 
 /* 슬라이드 내용 */
-.sw-notice {
+.sw-event {
   width: 100%;
   height: 100%;
 }
 
-.sw-notice a {
+.sw-event a {
   position: relative;
   display: block;
   width: 100%;
   height: 100%;
 }
 
-.sw-notice-1 {
+.sw-event-1 {
   background: url('../images/event_1.png') no-repeat center;
   background-size: contain;
 }
 
-.sw-notice-2 {
+.sw-event-2 {
   background: url('../images/event_2.png') no-repeat center;
   background-size: contain;
 }
 
-.sw-notice-3 {
+.sw-event-3 {
   background: url('../images/event_3.png') no-repeat center;
   background-size: contain;
 }
 
-.sw-notice-4 {
+.sw-event-4 {
   background: url('../images/event_4.png') no-repeat center;
   background-size: contain;
 }
 
-.sw-notice-5 {
+.sw-event-5 {
   background: url('../images/event_5.png') no-repeat center;
   background-size: contain;
 }
 
-.sw-notice-6 {
+.sw-event-6 {
   background: url('../images/event_6.png') no-repeat center;
   background-size: contain;
 }
 
-.sw-notice-7 {
+.sw-event-7 {
   background: url('../images/event_7.png') no-repeat center;
   background-size: contain;
 }
@@ -295,6 +298,7 @@ body {
 .sw-control button {
   display: block;
   width: 30px;
+  height: 28px;
   border: 0;
   cursor: pointer;
 }
@@ -304,10 +308,11 @@ body {
   line-height: 30px;
 }
 
-.sw-notice-prev {
+.sw-event-prev {
   position: absolute;
   top: 0;
   left: 0;
+  background: #fff;
 }
 
 .swiper-pagination-fraction {
@@ -327,15 +332,16 @@ body {
   font-weight: 700;
 }
 
-.sw-notice-next {
+.sw-event-next {
   position: absolute;
   top: 0;
   right: 0;
+  background: #fff;
 }
 
 
 /* 우측 */
-.notice-free {
+.event-free {
   position: relative;
   display: block;
   width: 592px;
@@ -343,7 +349,7 @@ body {
   float: right;
 }
 
-.notice-free a {
+.event-free a {
   position: relative;
   display: block;
   width: 100%;
@@ -353,16 +359,16 @@ body {
 }
 
 /* ========== 베스트 아이템 영역 ========== */
-.bestitem {
+.gooditem {
   position: relative;
   display: block;
 }
 
-.bestitem .inner {
+.gooditem .inner {
   padding: 80px 0 35px;
 }
 
-.bestitem h2 {
+.gooditem h2 {
   position: relative;
   display: block;
   font-size: 32px;
@@ -370,12 +376,12 @@ body {
   margin-bottom: 35px;
 }
 
-.best-list {
+.good-list {
   position: relative;
   display: block;
 }
 
-.best-list li {
+.good-list li {
   position: relative;
   display: block;
   width: 375px;
@@ -385,18 +391,18 @@ body {
   margin-bottom: 63px;
 }
 
-.best-list li:nth-child(3n) {
+.good-list li:nth-child(3n) {
   margin-right: 0;
 }
 
-.best-img {
+.good-img {
   position: relative;
   display: block;
   height: 415px;
   background: #f9f7f8;
 }
 
-.best-label {
+.good-label {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -407,7 +413,7 @@ body {
 }
 
 
-.best-img a {
+.good-img a {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -418,17 +424,33 @@ body {
   font-size: 0;
 }
 
-.best-img-1 {
+.good-img-1 {
   background: url('../images/porkbelly-fresh-list.png') no-repeat center;
   background-size: 276px;
 }
 
-.best-img-2 {
+.good-img-2 {
   background: url('../images/chickef-cut-list.png') no-repeat center;
   background-size: 276px;
 }
+.good-img-3 {
+  background: url('../images/porkcutlet-sirloin-list.png') no-repeat center;
+  background-size: 276px;
+}
+.good-img-4 {
+  background: url('../images/egg-fresh-list.png') no-repeat center;
+  background-size: 276px;
+}
+.good-img-5 {
+  background: url('../images/milk-fresh-list.png') no-repeat center;
+  background-size: 276px;
+}
+.good-img-6 {
+  background: url('../images/baby-hanuround-bmix-list.png') no-repeat center;
+  background-size: 276px;
+}
 
-.best-img button {
+.good-img button {
   position: absolute;
   right: 20px;
   bottom: 12px;
@@ -438,29 +460,29 @@ body {
   border: 2px solid #eee;
   border-radius: 50%;
   box-shadow: 0 20px 10px -15px rgb(0 0 0 / 12%);
-  background: #fff url('../images/best-cart.svg') no-repeat center;
+  background: #fff url('../images/good-cart.svg') no-repeat center;
   background-size: 70px;
   font-size: 0;
   cursor: pointer;
 }
 
-.best-img button:hover {
-  background: #212121 url('../images/best-cart-wh.svg') no-repeat center;
+.good-img button:hover {
+  background: #212121 url('../images/good-cart-wh.svg') no-repeat center;
   border: 2px solid #212121;
 }
 
-.best-info {
+.good-info {
   position: relative;
   display: block;
 }
 
-.best-info h6 {
+.good-info h6 {
   font-size: 18px;
   margin: 16px 0 8px;
   color: #000;
 }
 
-.best-info p {
+.good-info p {
   font-size: 16px;
   color: #9b9b9b;
 }
@@ -683,4 +705,5 @@ body {
   line-height: 32px;
   cursor: pointer;
   margin-left: 8px;
+  font-family: 'Spoqa Han Sans', "Sans-serif";
 }
